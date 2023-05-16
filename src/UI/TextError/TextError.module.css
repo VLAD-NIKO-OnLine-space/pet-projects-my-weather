@@ -1,0 +1,23 @@
+.text{
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    color: #ff1f85;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 0;
+    transition: 0.1s ease-in-out;
+}
+
+.active{
+    opacity: 1;
+    display: flex;
+    animation: error 1s ease-in-out infinite alternate;
+}
+
+@keyframes error {
+    0%{opacity: 1;}
+    100%{opacity: 0.2;}
+}

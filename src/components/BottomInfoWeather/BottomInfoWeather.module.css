@@ -1,0 +1,74 @@
+.main{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+    align-items: center;
+}
+
+.cont{
+    display: flex;
+    align-items: center;
+    gap: 10px 40px;
+    width: 240px;
+    justify-content: space-between;
+}
+
+.title{
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 0.045em;
+    text-transform: capitalize;
+    opacity: 0;
+    animation: sc 1s ease-in forwards;
+    animation-delay: 0.5s;
+
+
+}
+.par{
+    text-transform: capitalize;
+    margin: 0;
+    font-weight: 300;
+    opacity: 0;
+    animation: sc 1s ease-in forwards;
+
+}
+
+.gif{
+    width: 50px;
+    filter: invert(100%);
+    pointer-events: none;
+    opacity: 0;
+    animation: gif 1s ease-in forwards;
+    animation-delay: 1s;
+}
+
+.gif2{
+    width: 50px;
+    filter: invert(100%);
+    padding-left: 25px;
+    pointer-events: none;
+    opacity: 0;
+    animation: gif 1s ease-in forwards;
+    animation-delay: 1s;
+}
+
+
+@keyframes sc {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes gif {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}

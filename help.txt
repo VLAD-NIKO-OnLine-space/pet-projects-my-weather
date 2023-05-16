@@ -1,0 +1,5 @@
+
+API данных о погоде:
+https://openweathermap.org/current
+
+1afbb913bec7dd16d03555c1a964e43b
